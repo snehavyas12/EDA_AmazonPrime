@@ -1,1 +1,12 @@
--- README for AMAZON PRIME ANALYSIS
+# Data Driven Analysis and Visualization of Amazon Prime TV Shows and Movies.
+
+This project analyzes Amazon Prime Video’s U.S. catalog to uncover trends in content diversity, regional representation, temporal growth, audience ratings, and star influence, with the goal of deriving insights that support data-driven content strategy in the streaming industry. 
+The analysis makes use of libraries such as Pandas, NumPy, Matplotlib and Seaborn. The dataset includes two csv files names 'titles' (9500+ tiles) and 'credits' (124k+ credits). It is mixed dataset with both numerical and categorical data. 
+The project overview of dataset, where we take a zoomed out look of the data such as dataset information, datatypes, variables and checking unique values and value counts of categorical column.
+This is folowed by dropping unnecessary columns which have little analytical value and have much more nulls. For rest, the numerical column had nulls which were filled by mean/median depending upon the skewness of the variables.
+After that, duplicates are spooted and dropped from the dataset.
+Further, we handle outliers in one of the most important feature: Runtime. We use IQR method to spot outliers in runtme and the extremes from the lower limits are dropped. 
+Going ahead, we start with Exploratory Data Analysis by doing Univariate Analysis on IMDb scores and content. 
+Follows is Bivariate Analysis where we do some feature engineering and study dataset as per our objectives. Multiple visualizations and descriptive statistics were employed to explore distributions of titles by type, release year, genres, IMDb vs. TMDB scores, Dominating countries' content and actor/director participation.
+We conduct a Multivariate Analysis to map correlations between the numerical columns by drawing charts such as Heatmaps and Pair Plots. 
+The project infers Amazon Prime's US catalog is strong but unbalanced. It has too many movies and relies mostly on US content. Viewers, however, are asking for more TV shows and a wider mix of international titles. To improve, Amazon should add more shows, bring in global hits, adjust runtimes to match audience preferences, and expand into niche genres. This will help increase viewer satisfaction, keep subscribers for longer, and grow in the competitive streaming market.
